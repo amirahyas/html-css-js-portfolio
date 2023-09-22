@@ -38,7 +38,13 @@ nav{
     align-items: center;
     height: 17vh;
 }
-
+#profile-image {
+    width: 200x;
+    height: 200x;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .nav-links{
     gap: 2rem;
     list-style-type: none;
