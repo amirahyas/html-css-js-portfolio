@@ -334,7 +334,8 @@ flex: column;
 
 .experience-details-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around
+    ;
     flex-direction: column;
 }
 
@@ -348,9 +349,7 @@ flex: column;
 }
 
 article {
-    display: flex;
     width: 10rem;
-    justify-content: space-around;
     gap: 0.5rem;
 }
 
