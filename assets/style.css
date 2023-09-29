@@ -13,7 +13,7 @@ html{
 p {
     color: rgb(85, 85, 85);
 }
-    /TRANSITION/
+    /* TRANSITION */
     a,
     .btn {
         transition: all 300ms ease;
@@ -142,13 +142,17 @@ section {
 }
 .section__pic-container {
     display: flex;
-    height: 400px;
+    height: 800px;
     width:400px;
     margin:auto 0;
 }
 .section__text {
-    align-self: center;
+    align-self: Right;
     text-align: center;
+    width: 40%;
+    position: absolute;
+    bottom: 16rem;
+    right: 14rem;
 }
 .section__text_p {
     font-weight: 600;
@@ -159,10 +163,13 @@ text-align: center;
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    
 }
+/* projects title */
 .title {
     font: 3rem;
-    text-align: center;
+    text-align: center ;
+    
 }
 #socials-container {
     display: flex;
@@ -188,26 +195,55 @@ gap: 1rem;
     width: 8rem;
     border-radius: 2rem
 }
-.btn-color-1,
+/* contact info */
+
  .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
-.btn-color-1 :hover {
+    border: rgb(26, 23, 23) 0.1rem solid;
+    width: 4rem;
     cursor: pointer;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: relative;
+    transition: transform 0.3s;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+
+    
+    /* gh btn 1 */
+ }
+ .btn-color-1 {
+    border: rgb(26, 23, 23) 0.1rem solid;
+    cursor: pointer;
+    background-color: rgb(247, 245, 245);
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: relative;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    
+
+ }
+
+.btn-color-1:hover {
+    color: white;
+    background: rgb(53, 51, 51);
+
 }
- .btn-color-2:hover {
-    background:rgb(0, 0, 0) ;
-}
-.btn-color-1 :hover
  .btn-color-2:hover {
     background: rgb(53, 53, 53);
-    color: white
-}
-.btn-color-1 :hover {
-    background: rgb(0,0,0);
-}
-.btn-color-2  {
-    background: none;
+    color: rgb(255, 251, 253)
+    
 }
 .btn-color:hover {
     border: rgb(255,255,255) 0.1rem solid;
@@ -224,10 +260,16 @@ gap: 1rem;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border: 100%;
+    width: 100%;
 }
+/* about me */
 .about-details-container {
 justify-content: center;
-flex: column;
+flex: row;
+display: inline-block;
+line-height: 45px;
+
 }
  .about-container,
  .about-details-container {
@@ -242,10 +284,9 @@ flex: column;
     bottom: 2.5rem;
 }
 .details-container {
-    width: 100%;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .section-container {
     gap: 4rem;
@@ -255,29 +296,34 @@ flex: column;
     height: 400px;
     width: 400px;
     margin: auto 0;
+    
+ 
+
    
 }
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
 }
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600px;
-    font-size: 1.75;
-    margin-bottom: 2rem;
-    text-align: center;
-    
-}
 
-.btn-color-2 {
-    background-color: white;
-    border: 2px solid grey;
-    border-radius: 50px;
-    padding: 20px 40px;
-    position: relative;
-    transition: transform 0.3s;
-    
+/* project one title
+ */
+.experience-sub-title1 {
+    color: rgb(241, 7, 97);
+    font-weight: 500px;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 190px;
+    left: 30px;
+
+}
+.experience-sub-title2 {
+    color: rgb(10, 21, 116);
+    font-weight: 50px;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: -300px;
+    left: 60px;
 }
 
 .btn-color-2:hover {
@@ -315,15 +361,22 @@ article .icon {
 }
 
 .section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+   width: 700px;
+   height: 200px;
+   
 }
 
 .project-img1 {
-    width: 600px;
-    height: fit-content;
-    display: inline-block;
+    width: 300%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid;
+    padding: 90px;
+    border-radius: 40px;
+
+   
+    
 }
 
 #projects {
@@ -331,35 +384,98 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
+    border-color: rgb(139, 207, 28);
     background: rgb(250, 250, 250);
+    border: none;
 }
 
 .project-img2 {
-    width: 600px;
-    height: 90%;
-    display: inline-block;
+    width: 300%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid;
+    padding: 90px;
+    border-radius: 40px;
+    display: flex;
+    
 }
 
 .project-img3 {
-    border-radius: 2rem;
-    width: 600px;
-    height: 90%;
-    display: inline-block;
-    
+    width: 300%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bordered-container {
+
+    border: 3px solid;
+    padding: 10px;
+    border-radius: 40px;
+
 }
 .article-container {
     flex-direction: row;
 }
 .project.title {
     margin: 1rem;
-    color: black;
+    color: rgb(202, 16, 16);
 }
 
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+/* project 1 GH btn*/
+
+.project-btn1 {
+    color: rgb(8, 8, 8);
+    border-color: rgb(14, 14, 14);
+    border-width: 2px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    left: 20px;
+    top: 500px;
+}
+/* live demo btn */
+.project-btn2 {
+    color: rgb(14, 14, 14);
+    border-color: rgb(14, 13, 13);
+    border-width: 2px;
+    position: absolute;
+    height: 30px;
+    padding: 5px;
+    bottom: 10rem;
+    width: 100px;
+    left: 10rem;
+    top:500px;
+   
 }
 
+/* project two demo btn */
+.btn-color-3 {
+    color: rgb(238, 160, 160);
+    border-color: rgb(197, 197, 8);
+    border-width:2px;
+    height: 30px;
+    position: absolute;
+    padding: 5px;
+    bottom: 10px;
+    width: 100px;   
+    right: 25rem;
+}
+
+.project-btn-2 {
+    color: rgb(8, 8, 8);
+    border-color: rgb(14, 13, 13);
+    border-width: 2px;
+    position: absolute;
+    height: 30px;
+    padding: 5px;
+    bottom: 10rem;
+    width: 100px;
+    left: -12rem;
+   
+}
 /* CONTACT */
 
