@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my portfolio</title>
-    <link rel="stylesheet" href="./fakestyle.css">
-    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="./assets/fakestyle.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 </head>
 <body>
  <nav id="desktop-nav">
@@ -38,7 +38,7 @@
         </nav>
         <section id="profile">
             <div class="section__pic-container">
-                <img id="profile-image"  src="./profile-img.JPEG" alt="Amirah Bullock profile picture"/>
+                <img id="profile-image"  src="./assets/profile-img.JPEG" alt="Amirah Bullock profile picture"/>
             </div>
             <div class="section__text">
                 <p class="section__text__p1">Hello, I'm</p>
@@ -58,13 +58,13 @@
         <div>
             <div id="socials-container">
                 <img
-                 src="./linkedin.JPG"
+                 src="./assets/linkedin.JPG"
                   alt="My linkedin Profile"
                   class="icon"
                   onclick="location.href='https://www.linkedin.com/in/amirah-b-521065293/'"
                   />
                 <img
-                 src="./github.png"
+                 src="./assets/github.png"
                   alt="My Github Profile"
                   class="icon"
                   onclick="location.href='https://github.png/'"
@@ -78,7 +78,7 @@
             <div class="section-container">
                 <div class="section__pic-container">
                     <img
-                     src="about-me2.JPEG"
+                     src="./assets/about-me2.JPEG"
                      alt="Profile picture"
                      class="about-pic"
                      />
@@ -87,7 +87,7 @@
                     <div class="about-container">
                         <div class="details-container">
                             <img
-                            src="experience.png"
+                            src="./assets/experience.png"
                             alt="experience icon"
                             class="icon"
                             />
@@ -96,7 +96,7 @@
                         </div>
                         <div class="details-container">
                             <img
-                            src="education.png"
+                            src="./assets/education.png"
                             alt="Education icon"
                             class="icon"
                           />
@@ -112,11 +112,12 @@
                     </div>
                 </div>
          </div>
-            <img src="./arrow.png"
+          <a href="#experience">
+            <img src="./assets/arrow.png"
              alt="arrow icon" 
              class="icon arrow" 
-             onclick="location.href='./#experience'"
             />
+        </a> 
         </section>
         <section id="experience">
             <p class="section__text__p1">Explore My</p>
@@ -126,7 +127,7 @@
                         <h2 class="experience-sub-title">Frontend Development</h2>
                         <div class="article-container">
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -136,7 +137,7 @@
                                  </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -146,7 +147,7 @@
                                  </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -156,7 +157,7 @@
                                  </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -166,7 +167,7 @@
                                 </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -176,7 +177,7 @@
                                  </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -201,7 +202,7 @@
                                  </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -211,7 +212,7 @@
                                  </div>
                             </article>
                             <article>
-                                <img src="./checkmark.png"
+                                <img src="./assets/checkmark.png"
                                  alt="experience icon"
                                  class="icon"
                                  />
@@ -221,7 +222,7 @@
                                  </div>
                               </article>
                                <article>
-                             <img src="./checkmark.png"
+                             <img src="./assets/checkmark.png"
                               alt="Experience icon" 
                               class="icon"
                               />
@@ -234,10 +235,10 @@
                           </div>
                         </div>
                      </div> 
-                      <img src="arrow.png"
+                      <img src="./assets/arrow.png"
                       alt="Arrow icon"
                       class="icon arrow"
-                      onclick="location.href='./#projects'"
+                      onclick="location.href='#projects'"
                       />
                     </div>
          </section>
@@ -249,21 +250,21 @@
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img
-                         src="project-1.png" 
+                         src="./assets/project-1.png" 
                         alt="project 1"
                         class="project-img"
                         />
                     </div>
                     <h2 class="experience-sub-title project-title">Project One</h2>
                     <div class="btn-container">
-                        <button 
-                        class="btn- btn-color-1 project-btn"
-                         onclick="location.href='https://github.com/amirahyas'""
-                         >
-                            Github
-                        </button>
+                        <a href="https://github.com/amirahyas">
+                            <button 
+                                class="btn- btn-color-1 project-btn">
+                                Github
+                            </button>
+                        </a> 
                         <button class="btn- btn-color-1 project-btn"
-                         onclick="location.href='https://github.com/amirahyas'"
+                        onclick="location.href='https://github.com/amirahyas'"
                          >
                           Live Demo
                         </button>
@@ -272,7 +273,7 @@
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img
-                         src="project-2.png" 
+                         src="./assets/project-2.png" 
                         alt="project 2"
                         class="project-img"
                         />
@@ -295,7 +296,7 @@
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img
-                         src="project-3.png" 
+                         src="./assets/project-3.png" 
                         alt="project 3"
                         class="project-img"
                         />
@@ -318,6 +319,6 @@
                 </div>
                 </div>
             </section>
-        <script src="./script.js"></script>
+        <script src="./assets/script.js"></script>
     </body>
  <html>
